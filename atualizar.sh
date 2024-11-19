@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git fetch origin
+
 if [[ -n $(git log HEAD..origin/main --oneline) ]]; then
     echo "Existem novos commits no branch remoto!"
 else
